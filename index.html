@@ -50,11 +50,11 @@
             <li class="nav-item @@contact-active">
               <a class="nav-link effect-3" href="">Contacto</a>
             </li>
-            <li class="nav-item @@contact-active">
+            <li class="nav-item">
                 <a class="nav-link effect-3" onclick="document.getElementById('id01').style.display='block'">Login</a>
               </li>
-              <li class="nav-item @@contact-active">
-                <a class="nav-link effect-3" href="">Registro</a>
+              <li class="nav-item">
+                <a class="nav-link effect-3" onclick="document.getElementById('id02').style.display='block'">Registro</a>
               </li>
             <li class="px-4 fill-none">
               <a href="#url" class="btn btn-style btn-secondary">Ordenar</a>
@@ -107,7 +107,39 @@
       </div>
     </form>
   </div>
+  <div id="id02" class="modal modal-login">
+    <span onclick="document.getElementById('id02').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="modal-content-login animate" action="/action_page.php" class="form-login">
+      <div class="imgcontainer user-avatar">
+        <img src="assets/images/silverware-1667988_1280.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="containerLoginModal">
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="uname" required class="input-user">
 
+        <label for="uname"><b>Nombre</b></label>
+        <input type="text" placeholder="Enter Name" name="uname" required class="input-name">
+        
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required class="input-password">
+  
+        <button type="submit" class="button-login">Register</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="containerLoginModal" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="#">need help?</a></span>
+      </div>
+    </form>
+  </div>
 
 
 
