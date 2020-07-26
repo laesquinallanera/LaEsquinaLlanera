@@ -16,13 +16,14 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #ffe119;
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  font-weight: 500;
 }
 
 /* Add a hover effect for buttons */
@@ -179,5 +180,11 @@ span.psw {
 @media screen and (max-width: 320px) {
   .modal-content-login{
     width: 80%;
+  }
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 2560px) {
+  .modal-content-login{
+    width: 35%;
   }
 }
