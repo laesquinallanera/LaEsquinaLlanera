@@ -141,7 +141,7 @@ span.psw {
   background-color: #fefefe;
   margin: 5px auto; /* 15% from the top and centered */
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 39%; /* Could be more or less, depending on screen size */
 }
 /* The Close Button */
 .close {
@@ -180,11 +180,5 @@ span.psw {
 @media screen and (max-width: 320px) {
   .modal-content-login{
     width: 80%;
-  }
-}
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 2560px) {
-  .modal-content-login{
-    width: 35%;
   }
 }
