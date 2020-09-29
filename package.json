@@ -1,0 +1,68 @@
+{
+  "name": "cartzilla",
+  "version": "1.0.0",
+  "description": "Digital Marketplace & Electronics Store WooCommerce Theme",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Transvelo/cartzilla.git"
+  },
+  "keywords": [
+    "multivendor",
+    "marketplace",
+    "electronics",
+    "fashion",
+    "digital",
+    "marketplace"
+  ],
+  "author": "MadrasThemes",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Transvelo/cartzilla/issues"
+  },
+  "homepage": "https://github.com/Transvelo/cartzilla#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "gh-pages": "~0.5.0",
+    "grunt": "^1.0.2",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "~2.1.0",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-uglify": "~2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-gh-pages": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-rtlcss": "~2.0.1",
+    "grunt-sass": "^2.1.0",
+    "grunt-stylelint": "~0.9.0",
+    "grunt-version": "~1.0.0",
+    "grunt-wp-i18n": "^1.0.0",
+    "husky": "^4.2.3",
+    "node-sass": "^4.14.1",
+    "stylelint": "~8.2.0"
+  },
+  "lint-staged": {
+    "package.json": [
+      "wp-scripts lint-pkg-json"
+    ],
+    "*.scss": [
+      "stylelint"
+    ],
+    "*.js": [
+      "wp-scripts lint-js"
+    ],
+    "ignore": [
+      "./dist/*",
+      "./build/**/*"
+    ]
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
+}

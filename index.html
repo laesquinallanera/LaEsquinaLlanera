@@ -1,144 +1,562 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
-
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
-
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
-
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-</style>
-
+    <meta charset="utf-8">
+    <title>La Esquina Llanera | Restaurante
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="La Esquina Llanera - Restaurante">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="La Esquina Llanera">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/front_end/img/logo_1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/front_end/img/logo_1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/front_end/img/logo_1.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="assets/front_end/img/logo_1.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="assets/front_end/vendor/simplebar/dist/simplebar.min.css" />
+    <link rel="stylesheet" media="screen" href="assets/front_end/vendor/tiny-slider/dist/tiny-slider.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@500;500&display=swap" rel="stylesheet">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/front_end/css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WKV3GT5');
+    </script>
 </head>
+<!-- Body-->
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+<body class="toolbar-enabled">
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+        <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Sign in / sign up modal-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" href="#signin-tab" data-toggle="tab" role="tab" aria-selected="true"><i class="czi-unlocked mr-2 mt-n1"></i>Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab" aria-selected="false"><i class="czi-user mr-2 mt-n1"></i>Registro</a></li>
+                    </ul>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body tab-content py-4">
+                    <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab" action="" method="post">
+                        <div class="form-group">
+                            <label for="si-email">Email</label>
+                            <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                            <div class="invalid-feedback">Correo inválido</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="si-password">Password</label>
+                            <div class="password-toggle">
+                                <input class="form-control" type="password" id="si-password" required>
+                                <label class="password-toggle-btn">
+                                    <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group d-flex flex-wrap justify-content-between">
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input class="custom-control-input" type="checkbox" id="si-remember">
+                                <label class="custom-control-label" for="si-remember">Recuerdame</label>
+                            </div><a class="font-size-sm" href="#">Olvidaste contraseña?</a>
+                        </div>
+						
+                        <button class="btn btn-primary btn-block btn-shadow" onClick="return inicioSesion()" type="submit">Iniciar Sesion</button>
+                    </form>
+                    <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+                        <div class="form-group">
+                            <label for="su-name">Nombre Completo</label>
+                            <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                            <div class="invalid-feedback">Por favor ponga su nombre</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="su-email">Email address</label>
+                            <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                            <div class="invalid-feedback">Correo inválido</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="su-password">Contraseña</label>
+                            <div class="password-toggle">
+                                <input class="form-control" type="password" id="su-password" required>
+                                <label class="password-toggle-btn">
+                                    <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Mostrar contraseña</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="su-password-confirm">Confirmar Contraseña</label>
+                            <div class="password-toggle">
+                                <input class="form-control" type="password" id="su-password-confirm" required>
+                                <label class="password-toggle-btn">
+                                    <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Mostrar Contraseña</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-shadow" type="submit">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar-->
+    <!-- Floating Navbar (Transparent version)-->
+    <header class="navbar d-block navbar-floating navbar-sticky navbar-expand-lg navbar-dark">
+        <div class="container"><a class="navbar-brand d-none d-sm-block mr-4 order-lg-1" href="index.html" style="min-width: 7rem;"><img class="navbar-floating-logo" width="142" src="assets/front_end/components/logo-01011-white.png" alt="EsquinaLlanera" /><img class="navbar-stuck-logo" width="148" src="assets/front_end/components/logo-01011.png" alt="EsquinaLlanera" /></a><a class="navbar-brand d-sm-none mr-2 order-lg-1" href="index.html" style="min-width: 4.625rem;"><img width="99" src="assets/front_end/components/logo-01011-white.png" alt="EsquinaLlanera" /></a>
+            <div class="navbar-toolbar d-flex align-items-center order-lg-3">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool ml-2" href="#signin-modal" data-toggle="modal"><span class="navbar-tool-tooltip">Cuenta</span>
+                    <div class="navbar-tool-icon-box"><i class="navbar-tool-icon czi-user"></i></div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse mr-auto order-lg-2" id="navbarCollapse">
+                <!-- Search (mobile)-->
+                <div class="d-lg-none p-3">
+                    <div class="input-group-overlay">
+                        <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
+                        <input class="form-control prepended-form-control" type="text" placeholder="What do you need?">
+                    </div>
+                </div>
+                <!-- Location dropdown-->
+                <ul class="navbar-nav mega-nav ml-lg-4 pr-lg-2 mr-lg-2">
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle pl-0" href="#" data-toggle="dropdown"><i class="czi-location mr-2"></i>Barrio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Modelia</a></li>
+                            <li><a class="dropdown-item" href="#">Bosa</a></li>
+                            <li><a class="dropdown-item" href="#">Suba</a></li>
+                            <li><a class="dropdown-item" href="#">Fontibón</a></li>
+                            <li><a class="dropdown-item" href="#">Chapinero</a></li>
+                            <li><a class="dropdown-item" href="#">Usaquen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Primary menu-->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="assets/front_end/food-delivery-single.html">Menú</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Search collapse-->
+        <div class="search-box collapse" id="searchBox">
+            <div class="container py-2">
+                <div class="input-group-overlay">
+                    <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
+                    <input class="form-control prepended-form-control" type="text" placeholder="What do you need?">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Page title-->
+    <!-- Page Content-->
+    <!-- Hero section-->
+    <section class="bg-darker bg-size-cover bg-position-center py-5 py-lg-10" style="background-image: url(assets/front_end/img/intro/bbq1.jpg.png);">
+        <div class="container mt-4 mt-lg-3 pt-5 pb-10">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 text-center">
+                    <h5 class="text-light font-weight-light">El mejor servicio desde 2010</h5>
+                    <div class="h1 text-light mb-3 pb-4" style="font-family: 'Rubik Mono One', sans-serif;">Distribuimos tu comida favorita &amp; de calidad <br>
+                    </div><a class="btn btn-primary" href="assets/front_end/food-delivery-single.html" data-scroll>¿Que deseas comer?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container py-4 my-lg-3 py-sm-5" id="cuisine">
+        <h2 class="text-center pt-4 pt-sm-3" style="font-family: 'Bree Serif', serif;">La Mejor Comida de tu Barrio</h2>
+        <p class="text-muted text-center mb-5">Elije lo que quieras y lo llevaremos hasta tu casa</p>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 box-shadow" href="assets/front_end/food-delivery-single.html"><img class="card-img-top" src="assets/front_end/img/food-delivery/category/01.jpg" alt="Platos" />
+                    <div class="card-body py-4 text-center">
+                        <h3 class="h5 mt-1">Platos</h3>
+                    </div>
+                </a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 box-shadow" href="assets/front_end/bebidas.html"><img class="card-img-top" src="assets/front_end/img/food-delivery/category/02.jpg" alt="Bebidas" />
+                    <div class="card-body py-4 text-center">
+                        <h3 class="h5 mt-1">Bebidas</h3>
+                    </div>
+                </a></div>
+            <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 box-shadow" href="assets/front_end/complementos.html"><img class="card-img-top" src="assets/front_end/img/food-delivery/category/03.jpg" alt="Complementos" />
+                    <div class="card-body py-4 text-center">
+                        <h3 class="h5 mt-1">Complementos</h3>
+                    </div>
+                </a></div>
+        </div>
+    </section>
+    <!-- Become Courier / Partner CTA-->
+    <section class="container pb-4 pt-lg-5 pb-sm-5">
+        <div class="row pt-4 mt-2 mt-lg-3 mb-md-2">
+            <div class="col-lg-6 mb-grid-gutter">
+                <div class="media d-block d-sm-flex justify-content-between align-items-center bg-faded-info rounded-lg">
+                    <div class="media-body pt-5 py-sm-5 px-4 pl-md-5 pr-md-0 text-center text-sm-left">
+                        <h2>Esquina Llanera</h2>
+                        <p class="text-muted pb-2">La esquina llanera es una empresa dedicada a la distribución de alimentos de alta calidad&nbsp;&nbsp;</p>
+                        
+                    </div><img class="d-block mx-auto mx-sm-0" width="272" src="assets/front_end/img/food-delivery/courier.png" alt="Become a Courier" />
+                </div>
+            </div>
+            <div class="col-lg-6 mb-grid-gutter">
+                <div class="media d-block d-sm-flex justify-content-between align-items-center bg-faded-warning rounded-lg">
+                    <div class="media-body pt-5 py-sm-5 px-4 pl-md-5 pr-md-0 text-center text-sm-left">
+                        <h2>Menú</h2>
+                        <p class="text-muted pb-2">Descubre todos nuestros deliciosos productos</p><a class="btn btn-primary" href="assets/front_end/food-delivery-single.html">Ir</a>
+                    </div><img class="d-block mx-auto mx-sm-0" width="269" src="assets/front_end/img/food-delivery/chef.png" alt="Become a Partner" />
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="assets/front_end/home-food-delivery.html">
-						Cartzilla | Food Delivery Service
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=assets/front_end/home-food-delivery.html">
+    <!-- Reviews
 
+		<section class="bg-secondary py-5">
+        <div class="container py-md-4 pt-3 pb-0 py-sm-3">
+            <h2 class="text-center mb-4 mb-md-5" style="font-family: 'Bree Serif', serif;">Lo que dicen nuestros clientes</h2>
+            <div class="cz-carousel mb-3">
+                <div class="cz-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;:20}, &quot;576&quot;:{&quot;items&quot;:2, &quot;gutter&quot;:20},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;:20},&quot;1080&quot;:{&quot;items&quot;:4, &quot;gutter&quot;:25}}}">
+                    <blockquote class="mb-2">
+                        <div class="card border-0 box-shadow-sm"><span class="cz-testimonial-mark"></span>
+                            <div class="card-body font-size-md text-muted">
+                                <div class="mb-2">
+                                    <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
+                                    </div>
+                                </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                        <footer class="d-flex justify-content-center pt-4">
+                            <div class="media align-items-center"><img class="rounded-circle" width="50" src="assets/front_end/img/testimonials/03.jpg" alt="Richard Davis" />
+                                <div class="media-body pl-3">
+                                    <h6 class="font-size-sm mb-n1">Richard Davis</h6><span class="font-size-ms text-muted opacity-75">Feb 14, 2020</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="mb-2">
+                        <div class="card border-0 box-shadow-sm"><span class="cz-testimonial-mark"></span>
+                            <div class="card-body font-size-md text-muted">
+                                <div class="mb-2">
+                                    <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i>
+                                    </div>
+                                </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                        <footer class="d-flex justify-content-center pt-4">
+                            <div class="media align-items-center"><img class="rounded-circle" width="50" src="assets/front_end/img/testimonials/04.jpg" alt="Laura Willson" />
+                                <div class="media-body pl-3">
+                                    <h6 class="font-size-sm mb-n1">Laura Willson</h6><span class="font-size-ms text-muted opacity-75">Feb 05, 2020</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="mb-2">
+                        <div class="card border-0 box-shadow-sm"><span class="cz-testimonial-mark"></span>
+                            <div class="card-body font-size-md text-muted">
+                                <div class="mb-2">
+                                    <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
+                                    </div>
+                                </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                        <footer class="d-flex justify-content-center pt-4">
+                            <div class="media align-items-center"><img class="rounded-circle" width="50" src="assets/front_end/img/testimonials/01.jpg" alt="Mary Grant" />
+                                <div class="media-body pl-3">
+                                    <h6 class="font-size-sm mb-n1">Mary Alice Grant</h6><span class="font-size-ms text-muted opacity-75">Jan 27, 2020</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="mb-2">
+                        <div class="card border-0 box-shadow-sm"><span class="cz-testimonial-mark"></span>
+                            <div class="card-body font-size-md text-muted">
+                                <div class="mb-2">
+                                    <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
+                                    </div>
+                                </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                        <footer class="d-flex justify-content-center pt-4">
+                            <div class="media align-items-center"><img class="rounded-circle" width="50" src="assets/front_end/img/shop/reviews/01.jpg" alt="Rafael Marquez" />
+                                <div class="media-body pl-3">
+                                    <h6 class="font-size-sm mb-n1">Rafael Marquez</h6><span class="font-size-ms text-muted opacity-75">Dec 19, 2020</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="mb-2">
+                        <div class="card border-0 box-shadow-sm"><span class="cz-testimonial-mark"></span>
+                            <div class="card-body font-size-md text-muted">
+                                <div class="mb-2">
+                                    <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i>
+                                    </div>
+                                </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                        <footer class="d-flex justify-content-center pt-4">
+                            <div class="media align-items-center"><img class="rounded-circle" width="50" src="assets/front_end/img/testimonials/02.jpg" alt="Adrian Lewis" />
+                                <div class="media-body pl-3">
+                                    <h6 class="font-size-sm mb-n1">Adrian Lewis</h6><span class="font-size-ms text-muted opacity-75">Dec 13, 2020</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="mb-2">
+                        <div class="card border-0 box-shadow-sm"><span class="cz-testimonial-mark"></span>
+                            <div class="card-body font-size-md text-muted">
+                                <div class="mb-2">
+                                    <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i><i class="sr-star czi-star"></i>
+                                    </div>
+                                </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+                        <footer class="d-flex justify-content-center pt-4">
+                            <div class="media align-items-center"><img class="rounded-circle" width="50" src="assets/front_end/img/shop/reviews/03.jpg" alt="Daniel Adams" />
+                                <div class="media-body pl-3">
+                                    <h6 class="font-size-sm mb-n1">Daniel Adams</h6><span class="font-size-ms text-muted opacity-75">Dec 04, 2020</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
-
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
-
+	-->
+    
+    <!-- Footer-->
+    <!-- Footer
+      <div class="widget pb-2 mb-4">
+              <h3 class="widget-title text-light pb-1">Download our app</h3>
+              <div class="d-flex flex-wrap"><a class="btn-market btn-apple border border-light mr-3 mb-2" href="#" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">App Store</span></a><a class="btn-market btn-google border border-light mb-2" href="#" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google Play</span></a></div>
+            </div>
+    -->
+    <footer class="bg-dark pt-5">
+  <div class="container">
+    <div class="row pb-2">
+      <div class="col-md-4 col-sm-6">
+        <div class="widget widget-links widget-light pb-2 mb-4">
+          <h3 class="widget-title text-light">Menú</h3>
+          <ul class="widget-list">
+            <li class="widget-list-item">
+              <a href="assets/front_end/1-food-delivery-single-cli.html" class="widget-list-link">Platos</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="assets/front_end/1-bebidas-cli.html" class="widget-list-link">Bebidas</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="assets/front_end/1-complementos-cli.html" class="widget-list-link">Complementos</a>
+            </li>
+            <!--<li class="widget-list-item">
+              <a href="#" class="widget-list-link">Jeans</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Shirts & Tops</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Shorts</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">T-Shirts</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Swimwear</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Clogs & Mules</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Bags & Wallets</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Accessories</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Sunglasses & Eyewear</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Watches</a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="widget widget-links widget-light pb-2 mb-4">
+          <h3 class="widget-title text-light">Dashboard&nbsp;</h3>
+          <ul class="widget-list">
+            <li class="widget-list-item">
+              <a href="assets/front_end/account-profile.html" class="widget-list-link">Perfil</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="assets/front_end/account-orders.html" class="widget-list-link">Órdenes</a>
+            </li>
+            
+            
+            <li class="widget-list-item">
+              <a href="assets/front_end/account-tickets.html" class="widget-list-link">Servicio al cliente</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="widget pb-2 mb-4">
+          <h3 class="widget-title text-light pb-1">Mantente informado</h3>
+          <form class="input-group input-group-overlay flex-nowrap">
+            <div class="input-group-prepend-overlay">
+              <span class="input-group-text text-muted font-size-base">
+                <i class="czi-mail"></i>
+              </span>
+            </div>
+            <input class="form-control prepended-form-control" type="email" placeholder="Tu Email">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">Subscribe*</button>
+            </div>
+          </form>
+          <small class="form-text text-light opacity-50">*Suscribete para obtener noticias, nuevos productos, promociones, descuentos y más</small>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="pt-5 bg-darker">
+    <div class="container">
+      <div class="row pb-3">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-rocket text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">Domicilios rápidos y gratis</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Domicilio gratis con una compra mayor a $33.300</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-support text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">24/7 Servicio al cliente</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Soporte amigable</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-money-bag text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">Pagos contra entrega</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Recibe tu domicilio y paga en la puerta de tu casa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-light pb-4 mb-3">
+      <div class="row pb-2">
+        <div class="col-md-6 text-center text-md-left mb-4">
+          <div class="text-nowrap mb-4">
+            <a class="d-inline-block align-middle mt-n1 mr-3" href="#">
+              <img class="d-block" width="117" src="assets/front_end/components/logo-01011-white.png" alt="logo-esquina-llanera"/>
+            </a>
+            <div class="btn-group dropdown disable-autohide">
+              
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <select class="custom-select custom-select-sm">
+                    <option value="usd">$ USD</option>
+                    <option value="eur">€ EUR</option>
+                    <option value="ukp">£ UKP</option>
+                    <option value="jpy">¥ JPY</option>
+                  </select>
+                </li>
+                <li>
+                  <a class="dropdown-item pb-1" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Français"/>
+                    Français
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item pb-1" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Deutsch"/>
+                    Deutsch
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Italiano"/>
+                    Italiano
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget widget-links widget-light">
+            <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+              
+              
+              <li class="widget-list-item mr-4">
+                <a href="#" class="widget-list-link">Servicio al cliente</a>
+              </li>
+              <li class="widget-list-item mr-4">
+                <a href="#" class="widget-list-link">Privacidad</a>
+              </li>
+              <li class=" widget-list-itemmr-4">
+                <a href="#" class="widget-list-link">Terminos de uso</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 text-center text-md-right mb-4">
+          <div class="mb-3">
+            <a class="social-btn sb-light sb-twitter ml-2 mb-2" href="#"><i class="czi-twitter"></i></a>
+            <a class="social-btn sb-light sb-facebook ml-2 mb-2" href="#"><i class="czi-facebook"></i></a>
+            <a class="social-btn sb-light sb-instagram ml-2 mb-2" href="#"><i class="czi-instagram"></i></a>
+            <a class="social-btn sb-light sb-pinterest ml-2 mb-2" href="#"><i class="czi-pinterest"></i></a>
+            <a class="social-btn sb-light sb-youtube ml-2 mb-2" href="#"><i class="czi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="pb-4 font-size-xs text-light opacity-50 text-center text-md-left">© Hecho con amor por <a class="text-light" href="#">GAES 8</a></div>
+    </div>
+  </div>
+</footer>
+    <!-- Toolbar for handheld devices-->
+    <div class="cz-handheld-toolbar">
+        <div class="d-table table-fixed w-100"><a class="d-table-cell cz-handheld-toolbar-item" href="#signin-modal" data-toggle="modal"><span class="cz-handheld-toolbar-icon"><i class="czi-user"></i></span><span class="cz-handheld-toolbar-label">Account</span></a><a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)"><span class="cz-handheld-toolbar-icon"><i class="czi-menu"></i></span><span class="cz-handheld-toolbar-label">Menu</span></a><a class="d-table-cell cz-handheld-toolbar-item" href="food-delivery-cart.html"><span class="cz-handheld-toolbar-icon"><i class="czi-cart"></i><span class="badge badge-primary badge-pill ml-1">3</span></span><span class="cz-handheld-toolbar-label">$24.00</span></a>
+        </div>
+    </div>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon czi-arrow-up"> </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="assets/front_end/vendor/jquery/dist/jquery.slim.min.js"></script>
+    <script src="assets/front_end/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/front_end/vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script src="assets/front_end/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/front_end/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="assets/front_end/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="assets/front_end/js/theme.min.js"></script>
+    <script src="assets/front_end/js/login.js"></script>
 </body>
 
 </html>
-

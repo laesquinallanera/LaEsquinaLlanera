@@ -7,15 +7,15 @@
     <title>La Esquina Llanera | Restaurante - Facturación
     </title>
     <!-- SEO Meta Tags-->
-    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="description" content="Esquina Llanera - E-commerce Restaurante">
     <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
     <meta name="author" content="Createx Studio">
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo_1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo_1.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -73,7 +73,7 @@
                   <label class="custom-control-label" for="si-remember">Remember me</label>
                 </div><a class="font-size-sm" href="#">Forgot password?</a>
               </div>
-              <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign in</button>
+              <button class="btn btn-primary btn-block btn-shadow" onClick="return inicioSesion()" type="submit">Inicio Sesión</button>
             </form>
             <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
               <div class="form-group">
@@ -113,7 +113,7 @@
     <!-- Navbar-->
     <!-- Floating Navbar (Transparent version)-->
     <header class="navbar d-block navbar-sticky navbar-expand-lg navbar-light bg-light">
-      <div class="container"><a class="navbar-brand d-none d-sm-block mr-4 order-lg-1" href="index.html" style="min-width: 7rem;"><img width="148" src="components/logo-01011.png" alt="EsquinaLlanera"/></a><a class="navbar-brand d-sm-none mr-2 order-lg-1" href="../../index.html" style="min-width: 4.625rem;"><img width="74" src="img/logo-icon.png" alt="Cartzilla"/></a>
+      <div class="container"><a class="navbar-brand d-none d-sm-block mr-4 order-lg-1" href="../../index.html" style="min-width: 7rem;"><img width="148" src="components/logo-01011.png" alt="EsquinaLlanera"/></a><a class="navbar-brand d-sm-none mr-2 order-lg-1" href="../../index.html" style="min-width: 4.625rem;"><img width="99" src="components/logo-01011.png" alt="Cartzilla"/></a>
         <div class="navbar-toolbar d-flex align-items-center order-lg-3">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool d-none d-lg-flex" href="#searchBox" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="searchBox"><span class="navbar-tool-tooltip">Search</span>
             <div class="navbar-tool-icon-box"><i class="navbar-tool-icon czi-search"></i></div></a><a class="navbar-tool ml-2" href="#signin-modal" data-toggle="modal"><span class="navbar-tool-tooltip">Account</span>
@@ -181,7 +181,7 @@
           </ul>
           <!-- Primary menu-->
           <ul class="navbar-nav">
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="food-delivery-single.html" data-toggle="dropdown">Menú</a>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="food-delivery-single.html">Menú</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
           </ul>
@@ -295,7 +295,9 @@
                 <input class="custom-control-input" type="radio" name="payment" id="online">
                 <label class="custom-control-label" for="online">Pagar con:&nbsp;&nbsp;&nbsp;<img class="d-inline-block align-middle" src="img/cards.png" style="width: 187px;" alt="Cerdit Cards"></label>
               </div>
-              <button class="btn btn-primary btn-block mt-3" type="submit">Completar orden</button>
+				<a href="checkout-complete.html" class="btn btn-sm btn-primary">Test </a>
+              <button class="btn btn-success btn-block mt-3" type="submit">Completar orden</button>
+				
             </div>
             <div class="col-sm-6">
               <div class="d-fle flex-column h-100 rounded-lg bg-secondary px-3 px-sm-4 py-4">
@@ -311,14 +313,136 @@
     </div>
     <!-- Footer-->
     <!-- Footer-->
-    <footer class="bg-darker pt-5">
-      <div class="container pt-2">
-        <div class="row pb-2">
-          <div class="col-lg-2 col-sm-4 pb-2 mb-4">
-            <div class="mt-n1"><a class="d-inline-block align-middle" href="../../index.html"><img class="d-block mb-4" width="148" src="components/logo-01011-white.png" alt="esquina llanera"/></a></div>
+    <footer class="bg-dark pt-5">
+  <div class="container">
+    <div class="row pb-2">
+      <div class="col-md-4 col-sm-6">
+        <div class="widget widget-links widget-light pb-2 mb-4">
+          <h3 class="widget-title text-light">Menú</h3>
+          <ul class="widget-list">
+            <li class="widget-list-item">
+              <a href="1-food-delivery-single-cli.html" class="widget-list-link">Platos</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="1-bebidas-cli.html" class="widget-list-link">Bebidas</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="1-complementos-cli.html" class="widget-list-link">Complementos</a>
+            </li>
+            <!--<li class="widget-list-item">
+              <a href="#" class="widget-list-link">Jeans</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Shirts & Tops</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Shorts</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">T-Shirts</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Swimwear</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Clogs & Mules</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Bags & Wallets</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Accessories</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Sunglasses & Eyewear</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Watches</a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="widget widget-links widget-light pb-2 mb-4">
+          <h3 class="widget-title text-light">Dashboard&nbsp;</h3>
+          <ul class="widget-list">
+            <li class="widget-list-item">
+              <a href="account-profile.html" class="widget-list-link">Perfil</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="account-orders.html" class="widget-list-link">Órdenes</a>
+            </li>
+            
+            
+            <li class="widget-list-item">
+              <a href="account-tickets.html" class="widget-list-link">Servicio al cliente</a>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="widget pb-2 mb-4">
+          <h3 class="widget-title text-light pb-1">Mantente informado</h3>
+          <form class="input-group input-group-overlay flex-nowrap">
+            <div class="input-group-prepend-overlay">
+              <span class="input-group-text text-muted font-size-base">
+                <i class="czi-mail"></i>
+              </span>
+            </div>
+            <input class="form-control prepended-form-control" type="email" placeholder="Tu Email">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">Subscribe*</button>
+            </div>
+          </form>
+          <small class="form-text text-light opacity-50">*Suscribete para obtener noticias, nuevos productos, promociones, descuentos y más</small>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="pt-5 bg-darker">
+    <div class="container">
+      <div class="row pb-3">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-rocket text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">Domicilios rápidos y gratis</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Domicilio gratis con una compra mayor a $33.300</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-support text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">24/7 Servicio al cliente</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Soporte amigable</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-money-bag text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">Pagos contra entrega</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Recibe tu domicilio y paga en la puerta de tu casa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-light pb-4 mb-3">
+      <div class="row pb-2">
+        <div class="col-md-6 text-center text-md-left mb-4">
+          <div class="text-nowrap mb-4">
+            <a class="d-inline-block align-middle mt-n1 mr-3" href="#">
+              <img class="d-block" width="117" src="components/logo-01011-white.png" alt="logo-esquina-llanera"/>
+            </a>
             <div class="btn-group dropdown disable-autohide">
-              <button class="btn btn-outline-light border-light btn-sm dropdown-toggle px-2" type="button" data-toggle="dropdown"><img class="mr-2" width="20" src="img/flags/en.png" alt="English"/>Eng / $
-              </button>
+              
               <ul class="dropdown-menu">
                 <li class="dropdown-item">
                   <select class="custom-select custom-select-sm">
@@ -328,58 +452,57 @@
                     <option value="jpy">¥ JPY</option>
                   </select>
                 </li>
-                <li><a class="dropdown-item pb-1" href="#"><img class="mr-2" width="20" src="img/flags/fr.png" alt="Français"/>Français</a></li>
-                <li><a class="dropdown-item pb-1" href="#"><img class="mr-2" width="20" src="img/flags/de.png" alt="Deutsch"/>Deutsch</a></li>
-                <li><a class="dropdown-item" href="#"><img class="mr-2" width="20" src="img/flags/it.png" alt="Italiano"/>Italiano</a></li>
+                <li>
+                  <a class="dropdown-item pb-1" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Français"/>
+                    Français
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item pb-1" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Deutsch"/>
+                    Deutsch
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Italiano"/>
+                    Italiano
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-4">
-            <div class="widget widget-links widget-light pb-2 mb-4">
-              <h3 class="widget-title text-light">Join us</h3>
-              <ul class="widget-list">
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Careers</a></li>
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Restaurants</a></li>
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Become a Courier</a></li>
-                <li class="widget-list-item"><a class="widget-list-link" href="#">About</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-sm-4">
-            <div class="widget widget-links widget-light pb-2 mb-4">
-              <h3 class="widget-title text-light">Let us help you</h3>
-              <ul class="widget-list">
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Help Center</a></li>
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Support</a></li>
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Contacts</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-sm-4">
-            <div class="widget widget-links widget-light pb-2 mb-4">
-              <h3 class="widget-title text-light">Follow us</h3>
-              <ul class="widget-list">
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Facebook</a></li>
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Twitter</a></li>
-                <li class="widget-list-item"><a class="widget-list-link" href="#">Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
-        <hr class="hr-light mt-md-2 pb-4 mb-3">
-        <div class="d-md-flex justify-content-between pb-1">
-          <div class="pb-4 font-size-xs text-light opacity-50 text-center text-md-left">© All rights reserved. Made by <a class="text-light" href="https://createx.studio/" target="_blank" rel="noopener">Criptycal</a></div>
-          <div class="widget widget-links widget-light pb-4">
+          <div class="widget widget-links widget-light">
             <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
-              <li class="widget-list-item ml-4"><a class="widget-list-link font-size-ms" href="#">Privacy Policy</a></li>
-              <li class="widget-list-item ml-4"><a class="widget-list-link font-size-ms" href="#">Terms &amp; Conditions</a></li>
-              <li class="widget-list-item ml-4"><a class="widget-list-link font-size-ms" href="#">Cookies Policy</a></li>
+              
+              
+              <li class="widget-list-item mr-4">
+                <a href="#" class="widget-list-link">Servicio al cliente</a>
+              </li>
+              <li class="widget-list-item mr-4">
+                <a href="#" class="widget-list-link">Privacidad</a>
+              </li>
+              <li class=" widget-list-itemmr-4">
+                <a href="#" class="widget-list-link">Terminos de uso</a>
+              </li>
             </ul>
           </div>
         </div>
+        <div class="col-md-6 text-center text-md-right mb-4">
+          <div class="mb-3">
+            <a class="social-btn sb-light sb-twitter ml-2 mb-2" href="#"><i class="czi-twitter"></i></a>
+            <a class="social-btn sb-light sb-facebook ml-2 mb-2" href="#"><i class="czi-facebook"></i></a>
+            <a class="social-btn sb-light sb-instagram ml-2 mb-2" href="#"><i class="czi-instagram"></i></a>
+            <a class="social-btn sb-light sb-pinterest ml-2 mb-2" href="#"><i class="czi-pinterest"></i></a>
+            <a class="social-btn sb-light sb-youtube ml-2 mb-2" href="#"><i class="czi-youtube"></i></a>
+          </div>
+        </div>
       </div>
-    </footer>
+      <div class="pb-4 font-size-xs text-light opacity-50 text-center text-md-left">© Hecho con amor por <a class="text-light" href="#">GAES 8</a></div>
+    </div>
+  </div>
+</footer>
     <!-- Toolbar for handheld devices-->
     <div class="cz-handheld-toolbar">
       <div class="d-table table-fixed w-100"><a class="d-table-cell cz-handheld-toolbar-item" href="#signin-modal" data-toggle="modal"><span class="cz-handheld-toolbar-icon"><i class="czi-user"></i></span><span class="cz-handheld-toolbar-label">Account</span></a><a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)"><span class="cz-handheld-toolbar-icon"><i class="czi-menu"></i></span><span class="cz-handheld-toolbar-label">Menu</span></a><a class="d-table-cell cz-handheld-toolbar-item" href="food-delivery-cart.html"><span class="cz-handheld-toolbar-icon"><i class="czi-cart"></i><span class="badge badge-primary badge-pill ml-1">3</span></span><span class="cz-handheld-toolbar-label">$24.00</span></a>
@@ -395,6 +518,20 @@
     <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <!-- Main theme script-->
     <script src="js/theme.min.js"></script>
+	<script>
+			var userEmail = document.getElementById("si-email");
+			var password = document.getElementById("si-password");
+			function inicioSesion() {
+				if (userEmail.value == 'admin@esquinallanera.com' & password.value == '333') {
+					window.location = "assets/front_end/Dashboard/index.html";
+				} else if(userEmail.value == 'cliente@esquinallanera.com' & password.value == '333') {
+					window.location = "1-food-delivery-checkout-cli.html";
+				}else{
+					alert("error");
+				}
+				return false;
+			}
+		</script>
   </body>
 
 <!-- Mirrored from demo.createx.studio/cartzilla/food-delivery-checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 03:22:44 GMT -->

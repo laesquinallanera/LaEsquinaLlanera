@@ -1,0 +1,26 @@
+{
+  "name": "dashboard_npm",
+  "version": "1.0.0",
+  "description": "dependencies for my dashboard",
+  "main": "jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laesquinallanera/LaEsquinaLlanera.git"
+  },
+  "keywords": [
+    "restaurante"
+  ],
+  "author": "criptycal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laesquinallanera/LaEsquinaLlanera/issues"
+  },
+  "homepage": "https://github.com/laesquinallanera/LaEsquinaLlanera#readme",
+  "dependencies": {
+    "file-saver": "^2.0.2",
+    "xlsx": "^0.16.7"
+  }
+}

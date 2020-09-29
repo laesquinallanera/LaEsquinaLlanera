@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from demo.createx.studio/cartzilla/dashboard-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 03:22:47 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Esquina Llanera | Mesero Perfil
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body class="toolbar-enabled">
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Sign in / sign up modal-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#signin-tab" data-toggle="tab" role="tab" aria-selected="true"><i class="czi-unlocked mr-2 mt-n1"></i>Sign in</a></li>
+              <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab" aria-selected="false"><i class="czi-user mr-2 mt-n1"></i>Sign up</a></li>
+            </ul>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body tab-content py-4">
+            <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+              <div class="form-group">
+                <label for="si-email">Email address</label>
+                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label for="si-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="si-password" required>
+                  <label class="password-toggle-btn">
+                    <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group d-flex flex-wrap justify-content-between">
+                <div class="custom-control custom-checkbox mb-2">
+                  <input class="custom-control-input" type="checkbox" id="si-remember">
+                  <label class="custom-control-label" for="si-remember">Remember me</label>
+                </div><a class="font-size-sm" href="#">Forgot password?</a>
+              </div>
+              <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign in</button>
+            </form>
+            <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+              <div class="form-group">
+                <label for="su-name">Full name</label>
+                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <div class="invalid-feedback">Please fill in your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="su-email">Email address</label>
+                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label for="su-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password" required>
+                  <label class="password-toggle-btn">
+                    <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="su-password-confirm">Confirm password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password-confirm" required>
+                  <label class="password-toggle-btn">
+                    <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar-->
+    <!-- Add Payment Method-->
+    <form class="needs-validation modal fade" method="post" id="add-payment" tabindex="-1" novalidate>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add a payment method</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="custom-control custom-radio mb-4">
+              <input class="custom-control-input" type="radio" id="paypal" name="payment-method">
+              <label class="custom-control-label" for="paypal">PayPal<img class="d-inline-block align-middle ml-2" src="img/card-paypal.png" width="39" alt="PayPal"></label>
+            </div>
+            <div class="custom-control custom-radio mb-4">
+              <input class="custom-control-input" type="radio" id="card" name="payment-method" checked>
+              <label class="custom-control-label" for="card">Credit / Debit card<img class="d-inline-block align-middle ml-2" src="img/cards.png" width="187" alt="Credit card"></label>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-6">
+                <input class="form-control" type="text" name="number" placeholder="Card Number" required>
+                <div class="invalid-feedback">Please fill in the card number!</div>
+              </div>
+              <div class="form-group col-sm-6">
+                <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                <div class="invalid-feedback">Please provide name on the card!</div>
+              </div>
+              <div class="form-group col-sm-3">
+                <input class="form-control" type="text" name="expiry" placeholder="MM/YY" required>
+                <div class="invalid-feedback">Please provide card expiration date!</div>
+              </div>
+              <div class="form-group col-sm-3">
+                <input class="form-control" type="text" name="cvc" placeholder="CVC" required>
+                <div class="invalid-feedback">Please provide card CVC code!</div>
+              </div>
+              <div class="col-sm-6">
+                <button class="btn btn-primary btn-block mt-0" type="submit">Register this card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Navbar Marketplace-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar d-block navbar-sticky navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+            <a class="navbar-brand d-none d-sm-block mr-4 order-lg-1" href="../../cliente-index.html" style="min-width: 7rem;"><img width="148" src="components/logo-01011.png" alt="EsquinaLlanera"/></a><a class="navbar-brand d-sm-none mr-2 order-lg-1" href="../../index.html" style="min-width: 4.625rem;"><img width="99" src="components/logo-01011.png" alt="Cartzilla"/></a>
+            <div class="navbar-toolbar d-flex align-items-center order-lg-3">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-tool dropdown ml-2">
+                            <a class="navbar-tool-icon-box border dropdown-toggle" href="dashboard-sales.html">
+                                <img width="50" src="Dashboard/resources/front-end/assets/img/theme/light/team-8-800x800.jpg" class="rounded-circle" alt="LaEsquinaLlanera" />
+                            </a>
+                            <a class="navbar-tool-text ml-n1" href="dashboard-sales.html"> <small>Ahyan Delaney</small>Mesero </a>
+                            <div class="dropdown-menu dropdown-menu-right" style="min-width: 14rem;">
+                                <h6 class="dropdown-header">Cuenta</h6>
+                                <a class="dropdown-item d-flex align-items-center" href="2-dashboard-settings-caj.html"> <i class="czi-settings opacity-60 mr-2"></i>Perfil </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item d-flex align-items-center" href="2-dashboard-payouts-caj.html"> <i class="czi-basket opacity-60 mr-2"></i>Órdenes</a>
+                                <div class="dropdown-divider"></div>
+
+                                
+                                <a class="dropdown-item d-flex align-items-center" href="../../index.html"> <i class="czi-sign-out opacity-60 mr-2"></i>Salir </a>
+                            </div>
+                        </div>
+                        <div class="navbar-tool dropdown ml-3">
+               <a class="navbar-tool-icon-box bg-secondary dropdown-toggle" href="shop-cart.html"><span class="navbar-tool-label">4</span><i class="navbar-tool-icon czi-cart"></i></a><a class="navbar-tool-text" href="shop-cart.html"><small>Carrito</small>$33300</a>
+               <!-- Cart dropdown-->
+
+               <div class="dropdown-menu dropdown-menu-right" style="width: 20rem;">
+                  <div class="widget widget-cart px-3 pt-2 pb-3">
+                     <div style="height: 15rem;" data-simplebar data-simplebar-auto-hide="false">
+                        <div class="widget-cart-item pb-2 border-bottom">
+                           <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                           <div class="media align-items-center">
+                              <a class="d-block mr-2" href="shop-single-v1.html"><img width="64" src="img/food-delivery/restaurants/single/complementos/burguer.jpg" alt="Product"/></a>
+                              <div class="media-body">
+                                 <h6 class="widget-product-title"><a href="shop-single-v1.html">Hamburguesa de carne llanera</a></h6>
+                                 <div class="widget-product-meta"><span class="text-accent mr-2">$9900</span><span class="text-muted">x 1</span></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="widget-cart-item py-2 border-bottom">
+                           <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                           <div class="media align-items-center">
+                              <a class="d-block mr-2" href="shop-single-v1.html"><img width="64" src="img/food-delivery/restaurants/single/complementos/Salchipapon.jpeg" alt="Product"/></a>
+                              <div class="media-body">
+                                 <h6 class="widget-product-title"><a href="shop-single-v1.html">Salchipapa</a></h6>
+                                 <div class="widget-product-meta"><span class="text-accent mr-2">$7900</span><span class="text-muted">x 3</span></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="widget-cart-item py-2 border-bottom">
+                           <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                           <div class="media align-items-center">
+                              <a class="d-block mr-2" href="shop-single-v1.html"><img width="64" src="img/grocery/catalog/03.jpg" alt="Product"/></a>
+                              <div class="media-body">
+                                 <h6 class="widget-product-title"><a href="shop-single-v1.html">Pepsi 250ml</a></h6>
+                                 <div class="widget-product-meta"><span class="text-accent mr-2">$2500</span><span class="text-muted">x 3</span></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="widget-cart-item py-2 border-bottom">
+                           <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                           <div class="media align-items-center">
+                              <a class="d-block mr-2" href="shop-single-v1.html"><img width="64" src="img/food-delivery/category/01.jpg" alt="Product"/></a>
+                              <div class="media-body">
+                                 <h6 class="widget-product-title"><a href="">Plato de Carne</a></h6>
+                                 <div class="widget-product-meta"><span class="text-accent mr-2">$9000</span><span class="text-muted">x 1</span></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                        <div class="font-size-sm mr-2 py-2"><span class="text-muted">Subtotal:</span><span class="text-accent font-size-base ml-1">$33300</span></div>
+                        <a class="btn btn-outline-secondary btn-sm" href="1-food-delivery-cart-cli.html">Expandir<i class="czi-arrow-right ml-1 mr-n1"></i></a>
+                     </div>
+                     <a class="btn btn-success btn-sm btn-block" href="1-food-delivery-checkout-cli.html"><i class="czi-card mr-2 font-size-base align-middle"></i>Pagar</a>
+                  </div>
+                  <div class="navbar-tool dropdown ml-3">
+                     <!-- Cart dropdown-->
+                     <div class="dropdown-menu dropdown-menu-right" style="width: 20rem;">
+                        <div class="widget widget-cart px-3 pt-2 pb-3">
+                           <div style="height: 15rem;" data-simplebar data-simplebar-auto-hide="false">
+                              <div class="widget-cart-item pb-2 border-bottom">
+                                 <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                                 <div class="media align-items-center">
+                                    <a class="d-block mr-2" href="#"><img width="64" src="Dashboard/resources/front-end/assets/img/theme/light/platos/1.jpg" alt="plato" /></a>
+                                    <div class="media-body">
+                                       <h6 class="widget-product-title"><a href="#">Nombre Plato</a></h6>
+                                       <div class="widget-product-meta">
+                                          <span class="text-accent mr-2">$9.<small>00</small></span><span class="text-muted">x 1</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="widget-cart-item py-2 border-bottom">
+                                 <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                                 <div class="media align-items-center">
+                                    <a class="d-block mr-2" href="#"><img width="64" src="Dashboard/resources/front-end/assets/img/theme/light/platos/4.jpg" alt="Burger" /></a>
+                                    <div class="media-body">
+                                       <h6 class="widget-product-title"><a href="#">NombrePlato</a></h6>
+                                       <div class="widget-product-meta">
+                                          <span class="text-accent mr-2">$12.<small>00</small></span><span class="text-muted">x 1</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="widget-cart-item py-2 border-bottom">
+                                 <button class="close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                                 <div class="media align-items-center">
+                                    <a class="d-block mr-2" href="#"><img width="64" src="img/food-delivery/cart/th03.jpg" alt="Drink" /></a>
+                                    <div class="media-body">
+                                       <h6 class="widget-product-title"><a href="#">Coca Cola, 335ml</a></h6>
+                                       <div class="widget-product-meta">
+                                          <span class="text-accent mr-2">$1.<small>00</small></span><span class="text-muted">x 3</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                              <div class="font-size-sm mr-2 py-2">
+                                 <span class="text-muted">Total:</span><span class="text-accent font-size-base ml-1">$24.<small>00</small></span>
+                              </div>
+                              <a class="btn btn-outline-secondary btn-sm" href="food-delivery-cart.html">Expand cart<i class="czi-arrow-right ml-1 mr-n1"></i></a>
+                           </div>
+                           <a class="btn btn-success btn-sm btn-block" href="food-delivery-checkout.html"><i class="czi-card mr-2 font-size-base align-middle"></i>Pagar</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+                    </div>
+         </div>
+         <!-- Search collapse-->
+         <div class="search-box collapse" id="searchBox">
+            <div class="container py-2">
+               <div class="input-group-overlay">
+                  <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="czi-search"></i></span></div>
+                  <input class="form-control prepended-form-control" type="text" placeholder="What do you need?">
+               </div>
+            </div>
+         </div>
+      </header>
+    <!-- Page title-->
+    <!-- Page Content-->
+    <!-- Dashboard header-->
+    <div class="page-title-overlap bg-accent pt-4">
+      <div class="container d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-sm-between align-items-center pt-2">
+        <div class="media media-ie-fix align-items-center pb-3">
+          <div class="img-thumbnail rounded-circle position-relative" style="width: 6.375rem;"><img class="rounded-circle" src="Dashboard/resources/front-end/assets/img/theme/light/team-8-800x800.jpg" alt="Cajero"></div>
+          <div class="media-body pl-3">
+            <h3 class="text-light font-size-lg mb-0">Ahyan Delaney</h3><span class="d-block text-light font-size-ms opacity-40 py-1">Mesero <span class="badge badge-pill badge-light opacity-0">ID: 0101101 </span></span>
+          </div>
+        </div>
+        <div class="d-flex">
+          
+          <!--<div class="text-sm-right">
+            <div class="text-light font-size-base">Calificación</div>
+            <div class="star-rating"><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star-filled active"></i><i class="sr-star czi-star"></i>
+            </div>
+            <div class="text-light opacity-60 font-size-xs" style="text-align: left">Calificación  <br>por los usuarios</div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5 pb-3">
+      <div class="bg-light box-shadow-lg rounded-lg overflow-hidden">
+        <div class="row">
+          <!-- Sidebar-->
+          <aside class="col-lg-4">
+            <!-- Account menu toggler (hidden on screens larger 992px)-->
+            <div class="d-block d-lg-none p-4"><a class="btn btn-outline-accent d-block" href="#account-menu" data-toggle="collapse"><i class="czi-menu mr-2"></i>Cuenta</a></div>
+            <!-- Actual menu-->
+            <div class="cz-sidebar-static h-100 p-0">
+              <div class="secondary-nav collapse border-right" id="account-menu">
+                <div class="bg-secondary p-4">
+                  <h3 class="font-size-sm mb-0 text-muted">Cuenta</h3>
+                </div>
+                <ul class="list-unstyled mb-0">
+                  
+                  <li class="mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3 active" href="2-dashboard-settings-caj.html"><i class="czi-user opacity-60 mr-2"></i>Perfil</a></li>
+					<li class=" mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3" href="3-pendient-list-mes.html"><i class="czi-cashier opacity-60 mr-2"></i>Ordenes Pendientes<span class="text-info font-size-sm ml-auto " >7</span></a></li>
+					<li class=" mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3" href="dashboard-sales.html"><i class="czi-cashier opacity-60 mr-2"></i>Ordenes Listas<span class="text-info font-size-sm ml-auto " >3</span></a></li>
+                 
+                  <li class="mb-0"><a class="nav-link-style d-flex align-items-center px-4 py-3" href="../../index.html"><i class="czi-sign-out opacity-60 mr-2"></i>Salir</a></li>
+                </ul>
+<!--
+                <div class="bg-secondary p-4">
+                  <h3 class="font-size-sm mb-0 text-muted">Mesero Dashboard</h3>
+                </div>
+-->
+                <ul class="list-unstyled mb-0">
+                  
+                </ul>
+              </div>
+            </div>
+          </aside>
+          <!-- Content-->
+          <section class="col-lg-8 pt-lg-4 pb-4 mb-3">
+            <div class="pt-2 px-4 pl-lg-0 pr-xl-5">
+              <h2 class="h3 py-2 text-center text-sm-left">Perfil</h2>
+              <!-- Tabs-->
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item"><a class="nav-link px-0 active" href="#profile" data-toggle="tab" role="tab">
+                    <div class="d-none d-lg-block"><i class="czi-user opacity-60 mr-2"></i>Perfil</div>
+                    <div class="d-lg-none text-center"><i class="czi-user opacity-60 d-block font-size-xl mb-2"></i><span class="font-size-ms">Profile</span></div></a></li>
+                <li class="nav-item"><a class="nav-link px-0" href="#notifications" data-toggle="tab" role="tab">
+                    <div class="d-none d-lg-block"><i class="czi-bell opacity-60 mr-2"></i>Notificaciones</div>
+                    <div class="d-lg-none text-center"><i class="czi-bell opacity-60 d-block font-size-xl mb-2"></i><span class="font-size-ms">Notifications</span></div></a></li>
+                <!--<li class="nav-item"><a class="nav-link px-0" href="#payment" data-toggle="tab" role="tab">
+                    <div class="d-none d-lg-block"><i class="czi-card opacity-60 mr-2"></i>Payment methods</div>
+                    <div class="d-lg-none text-center"><i class="czi-card opacity-60 d-block font-size-xl mb-2"></i><span class="font-size-ms">Payment</span></div></a></li>-->
+              </ul>
+              <!-- Tab content-->
+              <div class="tab-content">
+                <!-- Profile-->
+                <div class="tab-pane fade show active" id="profile" role="tabpanel">
+                  <div class="bg-secondary rounded-lg p-4 mb-4">
+                    <div class="media align-items-center"><img src="Dashboard/resources/front-end/assets/img/theme/light/team-8-800x800.jpg" width="90" alt="Createx Studio">
+                      <div class="media-body pl-3">
+                        <button class="btn btn-light btn-shadow btn-sm mb-2" type="button"><i class="czi-loading mr-2"></i>Cambiar <span class="d-none d-sm-inline">imagen</span></button>
+                        <div class="p mb-0 font-size-ms text-muted">Subir JPG, GIF or PN . 300 x 300 requerido.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-fn">Nombres</label>
+                        <input class="form-control" type="text" id="dashboard-fn" value="John">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-ln">Apellidos</label>
+                        <input class="form-control" type="text" id="dashboard-ln" value="Doe">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-email">Email</label>
+                        <input class="form-control" type="text" id="dashboard-email" value="contact@example.com" disabled>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-profile-name">Nombre de usuario</label>
+                        <input class="form-control" type="text" id="dashboard-profile-name" value="Mesero01">
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-city">Ciudad</label>
+                        <input class="form-control" type="text" id="dashboard-city" value="Bogotá">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-address">Dirección</label>
+                        <input class="form-control" type="text" id="dashboard-address" value="Some Cool Street, 22/1">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-tel">Teléfono</label>
+                        <input class="form-control" type="text" id="dashboard-tel">
+                      </div>
+                    </div>
+					  <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="dashboard-dni">DNI</label>
+                        <input class="form-control" type="text" id="dashboard-dni">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <hr class="mt-2 mb-3">
+                      <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="custom-control custom-checkbox d-block">
+                          <input class="custom-control-input" type="checkbox" id="freelancer" checked>
+                          <!--<label class="custom-control-label" for="freelancer">I'm available for freelance</label>-->
+                        </div>
+                        <button class="btn btn-primary mt-3 mt-sm-0" type="button">Guardar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Notifications-->
+                <div class="tab-pane fade" id="notifications" role="tabpanel">
+                  <div class="bg-secondary rounded-lg p-4">
+                    <div class="custom-control custom-switch">
+                      <input class="custom-control-input" type="checkbox" id="nf-disable-all">
+                      <label class="custom-control-label font-weight-medium" for="nf-disable-all">Desactivar notificaciones</label>
+                    </div>
+                  </div>
+                  <div class="border-bottom p-4">
+                    <div class="custom-control custom-switch">
+                      <input class="custom-control-input" type="checkbox" id="nf-product-sold" checked>
+                      <label class="custom-control-label" for="nf-product-sold">Producto listo</label>
+                    </div><small class="form-text text-muted">Cuando el auxiliar de cocina actualiza el estado de la orden</small>
+                  </div>
+                  <div class="border-bottom p-4">
+                    <div class="custom-control custom-switch">
+                      <input class="custom-control-input" type="checkbox" id="nf-product-updated" checked>
+                      <label class="custom-control-label" for="nf-product-updated">Orden pendiente</label>
+                    </div><small class="form-text text-muted">Cuando el mesero registra una orden en el sistema</small>
+                  </div>
+                  <div class="border-bottom p-4">
+                    <div class="custom-control custom-switch">
+                      <input class="custom-control-input" type="checkbox" id="nf-product-comment" checked>
+                      <label class="custom-control-label" for="nf-product-comment">Solicitud del cliente</label>
+                    </div><small class="form-text text-muted">Notifica cuando el cliente solicita al mesero&nbsp;</small>
+                  </div>
+                  
+                  
+                  <div class="text-right mt-4">
+                    <button class="btn btn-primary" type="button">Guardar</button>
+                  </div>
+                </div>
+                <!-- Payment methods-->
+                <div class="tab-pane fade" id="payment" role="tabpanel">
+                  <div class="bg-secondary rounded-lg p-4 mb-4">
+                    <p class="font-size-sm text-muted mb-0">Primary payment method is used by default</p>
+                  </div>
+                  <div class="table-responsive font-size-md">
+                    <table class="table table-hover mb-0">
+                      <thead>
+                        <tr>
+                          <th>Your credit / debit cards</th>
+                          <th>Name on card</th>
+                          <th>Expires on</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-3 align-middle">
+                            <div class="media align-items-center"><img class="mr-2" src="img/card-visa.png" width="39" alt="Visa">
+                              <div class="media-body"><span class="font-weight-medium text-heading mr-1">Visa</span>ending in 4999<span class="align-middle badge badge-info ml-2">Primary</span></div>
+                            </div>
+                          </td>
+                          <td class="py-3 align-middle">John doe</td>
+                          <td class="py-3 align-middle">08 / 2019</td>
+                          <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">
+                              <div class="czi-trash"></div></a></td>
+                        </tr>
+                        <tr>
+                          <td class="py-3 align-middle">
+                            <div class="media align-items-center"><img class="mr-2" src="img/card-master.png" width="39" alt="MesterCard">
+                              <div class="media-body"><span class="font-weight-medium text-heading mr-1">MasterCard</span>ending in 0015</div>
+                            </div>
+                          </td>
+                          <td class="py-3 align-middle">John doe</td>
+                          <td class="py-3 align-middle">11 / 2021</td>
+                          <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">
+                              <div class="czi-trash"></div></a></td>
+                        </tr>
+                        <tr>
+                          <td class="py-3 align-middle">
+                            <div class="media align-items-center"><img class="mr-2" src="img/card-paypal.png" width="39" alt="PayPal">
+                              <div class="media-body"><span class="font-weight-medium text-heading mr-1">PayPal</span>j.doe@example.com</div>
+                            </div>
+                          </td>
+                          <td class="py-3 align-middle">&mdash;</td>
+                          <td class="py-3 align-middle">&mdash;</td>
+                          <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">
+                              <div class="czi-trash"></div></a></td>
+                        </tr>
+                        <tr>
+                          <td class="py-3 align-middle">
+                            <div class="media align-items-center"><img class="mr-2" src="img/card-visa.png" width="39" alt="Visa">
+                              <div class="media-body"><span class="font-weight-medium text-heading mr-1">Visa</span>ending in 6073</div>
+                            </div>
+                          </td>
+                          <td class="py-3 align-middle">John doe</td>
+                          <td class="py-3 align-middle">09 / 2021</td>
+                          <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">
+                              <div class="czi-trash"></div></a></td>
+                        </tr>
+                        <tr>
+                          <td class="py-3 align-middle">
+                            <div class="media align-items-center"><img class="mr-2" src="img/card-visa.png" width="39" alt="Visa">
+                              <div class="media-body"><span class="font-weight-medium text-heading mr-1">Visa</span>ending in 9791</div>
+                            </div>
+                          </td>
+                          <td class="py-3 align-middle">John doe</td>
+                          <td class="py-3 align-middle">05 / 2021</td>
+                          <td class="py-3 align-middle"><a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a><a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">
+                              <div class="czi-trash"></div></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <hr class="pb-4">
+                  <div class="text-sm-right"><a class="btn btn-primary" href="#add-payment" data-toggle="modal">Add payment method</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <!-- Footer-->
+    <footer class="bg-dark pt-5">
+  <div class="container">
+    <div class="row pb-2">
+      <div class="col-md-4 col-sm-6">
+        <div class="widget widget-links widget-light pb-2 mb-4">
+          <h3 class="widget-title text-light">Menú</h3>
+          <ul class="widget-list">
+            <li class="widget-list-item">
+              <a href="3-food-delivery-single-mes.html" class="widget-list-link">Platos</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="3-bebidas-mes.html" class="widget-list-link">Bebidas</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="3-complementos-mes.html" class="widget-list-link">Complementos</a>
+            </li>
+            <!--<li class="widget-list-item">
+              <a href="#" class="widget-list-link">Jeans</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Shirts & Tops</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Shorts</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">T-Shirts</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Swimwear</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Clogs & Mules</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Bags & Wallets</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Accessories</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Sunglasses & Eyewear</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="#" class="widget-list-link">Watches</a>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="widget widget-links widget-light pb-2 mb-4">
+          <h3 class="widget-title text-light">Dashboard&nbsp;</h3>
+          <ul class="widget-list">
+            <li class="widget-list-item">
+              <a href="2-dashboard-settings-caj.html" class="widget-list-link">Perfil</a>
+            </li>
+            <li class="widget-list-item">
+              <a href="2-dashboard-payouts-caj.html" class="widget-list-link">Órdenes</a>
+            </li>
+            
+            
+            <li class="widget-list-item">
+              <a href="account-tickets.html" class="widget-list-link"></a>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="widget pb-2 mb-4">
+          <h3 class="widget-title text-light pb-1">Mantente informado</h3>
+          <form class="input-group input-group-overlay flex-nowrap">
+            <div class="input-group-prepend-overlay">
+              <span class="input-group-text text-muted font-size-base">
+                <i class="czi-mail"></i>
+              </span>
+            </div>
+            <input class="form-control prepended-form-control" type="email" placeholder="Tu Email">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">Subscribe*</button>
+            </div>
+          </form>
+          <small class="form-text text-light opacity-50">*Suscribete para obtener noticias, nuevos productos, promociones, descuentos y más</small>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="pt-5 bg-darker">
+    <div class="container">
+      <div class="row pb-3">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-rocket text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">Domicilios rápidos y gratis</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Domicilio gratis con una compra mayor a $33.300</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-support text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">24/7 Servicio al cliente</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Soporte amigable</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="media">
+            <i class="czi-money-bag text-primary" style="font-size: 2.25rem;"></i>
+            <div class="media-body pl-3">
+              <h6 class="font-size-base text-light mb-1">Pagos contra entrega</h6>
+              <p class="mb-0 font-size-ms text-light opacity-50">Recibe tu domicilio y paga en la puerta de tu casa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-light pb-4 mb-3">
+      <div class="row pb-2">
+        <div class="col-md-6 text-center text-md-left mb-4">
+          <div class="text-nowrap mb-4">
+            <a class="d-inline-block align-middle mt-n1 mr-3" href="#">
+              <img class="d-block" width="117" src="components/logo-01011-white.png" alt="logo-esquina-llanera"/>
+            </a>
+            <div class="btn-group dropdown disable-autohide">
+              
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <select class="custom-select custom-select-sm">
+                    <option value="usd">$ USD</option>
+                    <option value="eur">€ EUR</option>
+                    <option value="ukp">£ UKP</option>
+                    <option value="jpy">¥ JPY</option>
+                  </select>
+                </li>
+                <li>
+                  <a class="dropdown-item pb-1" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Français"/>
+                    Français
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item pb-1" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Deutsch"/>
+                    Deutsch
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="mr-2" width="20" src="path-to-image" alt="Italiano"/>
+                    Italiano
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget widget-links widget-light">
+            <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+              
+              
+              <li class="widget-list-item mr-4">
+                <a href="#" class="widget-list-link">Empleados</a>
+              </li>
+              <li class="widget-list-item mr-4">
+                <a href="#" class="widget-list-link">Privacidad</a>
+              </li>
+              <li class=" widget-list-itemmr-4">
+                <a href="#" class="widget-list-link">Terminos de uso</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 text-center text-md-right mb-4">
+          <div class="mb-3">
+            <a class="social-btn sb-light sb-twitter ml-2 mb-2" href="#"><i class="czi-twitter"></i></a>
+            <a class="social-btn sb-light sb-facebook ml-2 mb-2" href="#"><i class="czi-facebook"></i></a>
+            <a class="social-btn sb-light sb-instagram ml-2 mb-2" href="#"><i class="czi-instagram"></i></a>
+            <a class="social-btn sb-light sb-pinterest ml-2 mb-2" href="#"><i class="czi-pinterest"></i></a>
+            <a class="social-btn sb-light sb-youtube ml-2 mb-2" href="#"><i class="czi-youtube"></i></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="pb-4 font-size-xs text-light opacity-50 text-center text-md-left">© Hecho con amor por <a class="text-light" href="#">GAES 8</a></div>
+    </div>
+  </div>
+</footer>
+    <!-- Toolbar for handheld devices-->
+    <div class="cz-handheld-toolbar">
+      <div class="d-table table-fixed w-100"><a class="d-table-cell cz-handheld-toolbar-item" href="account-wishlist.html"><span class="cz-handheld-toolbar-icon"><i class="czi-heart"></i></span><span class="cz-handheld-toolbar-label">Wishlist</span></a><a class="d-table-cell cz-handheld-toolbar-item" href="#navbarCollapse" data-toggle="collapse" onclick="window.scrollTo(0, 0)"><span class="cz-handheld-toolbar-icon"><i class="czi-menu"></i></span><span class="cz-handheld-toolbar-label">Menu</span></a><a class="d-table-cell cz-handheld-toolbar-item" href="shop-cart.html"><span class="cz-handheld-toolbar-icon"><i class="czi-cart"></i><span class="badge badge-primary badge-pill ml-1">4</span></span><span class="cz-handheld-toolbar-label">$265.00</span></a>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon czi-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from demo.createx.studio/cartzilla/dashboard-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Aug 2020 03:22:47 GMT -->
+</html>
