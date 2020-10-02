@@ -64,5 +64,9 @@
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
-  ]
+  ],
+  "dependencies": {
+    "Faker": "^0.7.2",
+    "bootstrap": "^4.5.2"
+  }
 }

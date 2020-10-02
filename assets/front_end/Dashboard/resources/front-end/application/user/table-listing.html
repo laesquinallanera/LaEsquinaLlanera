@@ -894,7 +894,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" class="avatar  rounded-circle" id="myImg">
                           <span class="avatar-child avatar-badge bg-success"></span>
                         </div>
                       </div>
@@ -936,7 +936,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" class="avatar  rounded-circle" id="myImg2">
                           <span class="avatar-child avatar-badge bg-warning"></span>
                         </div>
                       </div>
@@ -978,7 +978,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" id="myImg3" class="avatar  rounded-circle">
                           <span class="avatar-child avatar-badge bg-danger"></span>
                         </div>
                       </div>
@@ -1020,7 +1020,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-4-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" id="myImg4" class="avatar  rounded-circle">
                           <span class="avatar-child avatar-badge bg-success"></span>
                         </div>
                       </div>
@@ -1062,7 +1062,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-5-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" id="myImg5" class="avatar  rounded-circle">
                           <span class="avatar-child avatar-badge bg-success"></span>
                         </div>
                       </div>
@@ -1104,7 +1104,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" id="myImg6" class="avatar  rounded-circle">
                           <span class="avatar-child avatar-badge bg-success"></span>
                         </div>
                       </div>
@@ -1146,7 +1146,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" id="myImg7" class="avatar  rounded-circle">
                           <span class="avatar-child avatar-badge bg-warning"></span>
                         </div>
                       </div>
@@ -1188,7 +1188,7 @@
                     <div class="media align-items-center">
                       <div>
                         <div class="avatar-parent-child">
-                          <img alt="Image placeholder" src="../../assets/img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
+                          <img alt="Image placeholder" src="" id="myImg8" class="avatar  rounded-circle">
                           <span class="avatar-child avatar-badge bg-danger"></span>
                         </div>
                       </div>
@@ -1305,9 +1305,30 @@
     $("#button-a").click(function(){
        saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), 'test.xlsx')
     });
-       
-
 </script>
+    <!-- IA gen faces -->
+    <script>
+      async function getFace() {
+        let response = await fetch('https://api.generated.photos/api/v1/faces?per_page=8&gender=female&order_by=random',{
+          method: 'GET',
+          headers: {
+            'Authorization': 'API-Key SmWTeF9Ps7XILhYKPTcrbA'
+          }
+        });
+        let result = await response.json();
+        document.getElementById("myImg").src = result.faces[0].urls[4]["512"];
+        document.getElementById("myImg2").src = result.faces[1].urls[4]["512"];
+        document.getElementById("myImg3").src = result.faces[2].urls[4]["512"];
+        document.getElementById("myImg4").src = result.faces[3].urls[4]["512"];
+        document.getElementById("myImg5").src = result.faces[4].urls[4]["512"];
+        document.getElementById("myImg6").src = result.faces[5].urls[4]["512"];
+        document.getElementById("myImg7").src = result.faces[6].urls[4]["512"];
+        document.getElementById("myImg8").src = result.faces[7].urls[4]["512"];
+      }
+      
+      getFace();
+    </script>
+
 </body>
 
 

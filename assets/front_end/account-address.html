@@ -2,18 +2,18 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <title>Cartzilla | My addresses
+      <title>La Esquina Llanera | Mis direcciones
       </title>
       <!-- SEO Meta Tags-->
-      <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+      <meta name="description" content="La Esquina Llanera - Bootstrap E-commerce Template">
       <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
-      <meta name="author" content="Createx Studio">
+      <meta name="author" content="GAES 8">
       <!-- Viewport-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Favicon and Touch Icons-->
       <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
       <link rel="manifest" href="site.webmanifest">
       <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
       <meta name="msapplication-TileColor" content="#ffffff">
@@ -38,155 +38,84 @@
       <noscript>
          <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
       </noscript>
-      <!-- Sign in / sign up modal-->
-      <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
-         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <ul class="nav nav-tabs card-header-tabs" role="tablist">
-                     <li class="nav-item"><a class="nav-link active" href="#signin-tab" data-toggle="tab" role="tab" aria-selected="true"><i class="czi-unlocked mr-2 mt-n1"></i>Sign in</a></li>
-                     <li class="nav-item"><a class="nav-link" href="#signup-tab" data-toggle="tab" role="tab" aria-selected="false"><i class="czi-user mr-2 mt-n1"></i>Sign up</a></li>
-                  </ul>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               </div>
-               <div class="modal-body tab-content py-4">
-                  <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
-                     <div class="form-group">
-                        <label for="si-email">Email address</label>
-                        <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
-                        <div class="invalid-feedback">Please provide a valid email address.</div>
-                     </div>
-                     <div class="form-group">
-                        <label for="si-password">Password</label>
-                        <div class="password-toggle">
-                           <input class="form-control" type="password" id="si-password" required>
-                           <label class="password-toggle-btn">
-                           <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                           </label>
-                        </div>
-                     </div>
-                     <div class="form-group d-flex flex-wrap justify-content-between">
-                        <div class="custom-control custom-checkbox mb-2">
-                           <input class="custom-control-input" type="checkbox" id="si-remember">
-                           <label class="custom-control-label" for="si-remember">Remember me</label>
-                        </div>
-                        <a class="font-size-sm" href="#">Forgot password?</a>
-                     </div>
-                     <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign in</button>
-                  </form>
-                  <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
-                     <div class="form-group">
-                        <label for="su-name">Full name</label>
-                        <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
-                        <div class="invalid-feedback">Please fill in your name.</div>
-                     </div>
-                     <div class="form-group">
-                        <label for="su-email">Email address</label>
-                        <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
-                        <div class="invalid-feedback">Please provide a valid email address.</div>
-                     </div>
-                     <div class="form-group">
-                        <label for="su-password">Password</label>
-                        <div class="password-toggle">
-                           <input class="form-control" type="password" id="su-password" required>
-                           <label class="password-toggle-btn">
-                           <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                           </label>
-                        </div>
-                     </div>
-                     <div class="form-group">
-                        <label for="su-password-confirm">Confirm password</label>
-                        <div class="password-toggle">
-                           <input class="form-control" type="password" id="su-password-confirm" required>
-                           <label class="password-toggle-btn">
-                           <input class="custom-control-input" type="checkbox"><i class="czi-eye password-toggle-indicator"></i><span class="sr-only">Show password</span>
-                           </label>
-                        </div>
-                     </div>
-                     <button class="btn btn-primary btn-block btn-shadow" type="submit">Sign up</button>
-                  </form>
-               </div>
-            </div>
-         </div>
-      </div>
       <!-- Navbar-->
       <!-- Add New Address-->
       <form class="needs-validation modal fade" method="post" id="add-address" tabindex="-1" novalidate>
          <div class="modal-dialog modal-lg">
             <div class="modal-content">
                <div class="modal-header">
-                  <h5 class="modal-title">Add a new address</h5>
+                  <h5 class="modal-title">Añadir nueva dirección</h5>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                </div>
                <div class="modal-body">
                   <div class="row">
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <label for="address-fn">First name</label>
+                           <label for="address-fn">Primer nombre</label>
                            <input class="form-control" type="text" id="address-fn" required>
-                           <div class="invalid-feedback">Please fill in you first name!</div>
+                           <div class="invalid-feedback">Por favor ingresa tu nombre!</div>
                         </div>
                      </div>
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <label for="address-ln">Last name</label>
+                           <label for="address-ln">Segundo nombre</label>
                            <input class="form-control" type="text" id="address-ln" required>
-                           <div class="invalid-feedback">Please fill in you last name!</div>
+                           <div class="invalid-feedback">Por favor ingresa tu segundo nombre!</div>
                         </div>
                      </div>
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <label for="address-company">Company</label>
+                           <label for="address-company">Compañía</label>
                            <input class="form-control" type="text" id="address-company">
                         </div>
                      </div>
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <label for="address-country">Country</label>
+                           <label for="address-country">Barrio</label>
                            <select class="custom-select" id="address-country" required>
-                              <option value>Select country</option>
-                              <option value="Argentina">Argentina</option>
-                              <option value="Belgium">Belgium</option>
-                              <option value="France">France</option>
-                              <option value="Germany">Germany</option>
-                              <option value="Spain">Spain</option>
-                              <option value="UK">United Kingdom</option>
-                              <option value="USA">USA</option>
+                              <option value>Seleccionar Barrio</option>
+                              <option value="Argentina">Chapinero</option>
+                              <option value="Belgium">Bosa</option>
+                              <option value="France">Suba</option>
+                              <option value="Germany">Centro</option>
+                              <option value="Spain">Usaquen</option>
+                              <option value="UK">Fontibon</option>
+                              <option value="USA">Salitre</option>
                            </select>
-                           <div class="invalid-feedback">Please select your country!</div>
+                           <div class="invalid-feedback">Por favor selecciona tu barrio</div>
                         </div>
                      </div>
-                     <div class="col-sm-6">
+                     <!-- <div class="col-sm-6">
                         <div class="form-group">
                            <label for="address-city">City</label>
                            <input class="form-control" type="text" id="address-city" required>
                            <div class="invalid-feedback">Please fill in your city!</div>
                         </div>
-                     </div>
+                     </div> -->
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <label for="address-line1">Line 1</label>
+                           <label for="address-line1">Dirección</label>
                            <input class="form-control" type="text" id="address-line1" required>
-                           <div class="invalid-feedback">Please fill in your address!</div>
+                           <div class="invalid-feedback">Por favor llena tu dirección!</div>
                         </div>
                      </div>
-                     <div class="col-sm-6">
+                     <!-- <div class="col-sm-6">
                         <div class="form-group">
                            <label for="address-line2">Line 2</label>
                            <input class="form-control" type="text" id="address-line2">
                         </div>
-                     </div>
+                     </div> -->
                      <div class="col-sm-6">
                         <div class="form-group">
-                           <label for="address-zip">ZIP code</label>
+                           <label for="address-zip">Código postal</label>
                            <input class="form-control" type="text" id="address-zip" required>
-                           <div class="invalid-feedback">Please add your ZIP code!</div>
+                           <div class="invalid-feedback">Por favor ingresa tu código postal!</div>
                         </div>
                      </div>
                      <div class="col-12">
                         <div class="custom-control custom-checkbox">
                            <input class="custom-control-input" type="checkbox" id="address-primary">
-                           <label class="custom-control-label" for="address-primary">Make this address primary</label>
+                           <label class="custom-control-label" for="address-primary">Dirección principal</label>
                         </div>
                      </div>
                   </div>
@@ -244,7 +173,7 @@
          <div class="navbar-sticky bg-light">
             <div class="navbar navbar-expand-lg navbar-light">
                <div class="container">
-                  <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="index.html" style="min-width: 7rem;"><img width="142" src="components/logotype.png" alt="logotype"/></a><a class="navbar-brand d-sm-none mr-2" href="index.html" style="min-width: 4.625rem;"><img width="74" src="components/logotype.png" alt="little-logo"/></a>
+                  <a class="navbar-brand d-none d-sm-block mr-3 flex-shrink-0" href="../../index.html" style="min-width: 7rem;"><img width="152px" src="components/logotype.png" alt="logotype"/></a><a class="navbar-brand d-sm-none mr-2" href="../../index.html" style="min-width: 4.625rem;"><img width="74" src="components/logotype.png" alt="little-logo"/></a>
 				   
                   
                   <div class="navbar-toolbar d-flex align-items-center order-lg-3">
@@ -545,13 +474,10 @@
                      <!--<li class="border-bottom mb-0">
                         <a class="nav-link-style d-flex align-items-center px-4 py-3" href="account-wishlist.html"><i class="czi-heart opacity-60 mr-2"></i>Wishlist<span class="font-size-sm text-muted ml-auto">3</span></a>
                         </li>-->
-                     <li class="mb-0">
+                     <li class="mb-0 border-bottom">
                         <a class="nav-link-style d-flex align-items-center px-4 py-3" href="account-tickets.html"><i class="czi-help opacity-60 mr-2"></i>Servicio al cliente</a>
                      </li>
                   </ul>
-                  <div class="bg-secondary px-4 py-3">
-                     <h3 class="font-size-sm mb-0 text-muted">Cuenta</h3>
-                  </div>
                   <ul class="list-unstyled mb-0">
                      <li class="border-bottom mb-0">
                         <a class="nav-link-style d-flex align-items-center px-4 py-3" href="account-profile.html"><i class="czi-user opacity-60 mr-2"></i>Perfil</a>
@@ -563,7 +489,7 @@
                         <a class="nav-link-style d-flex align-items-center px-4 py-3" href="account-payment.html"><i class="czi-card opacity-60 mr-2"></i>Payment methods</a>
                         </li>-->
                      <li class="d-lg-none border-top mb-0">
-                        <a class="nav-link-style d-flex align-items-center px-4 py-3" href="account-signin.html"><i class="czi-sign-out opacity-60 mr-2"></i>Sign out</a>
+                        <a class="nav-link-style d-flex align-items-center px-4 py-3" href="../../index.html"><i class="czi-sign-out opacity-60 mr-2"></i>Salir</a>
                      </li>
                   </ul>
                </div>
@@ -586,7 +512,7 @@
                      </thead>
                      <tbody>
                         <tr>
-                           <td class="py-3 align-middle">396 Lillian Blvd, Holbrook, NY 11741, USA<span class="align-middle badge badge-info ml-2">Primary</span></td>
+                           <td class="py-3 align-middle">Calle 196 N 20-35, COL<span class="align-middle badge badge-info ml-2">Principal</span></td>
                            <td class="py-3 align-middle">
                               <a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a>
                               <a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">
@@ -595,7 +521,7 @@
                            </td>
                         </tr>
                         <tr>
-                           <td class="py-3 align-middle">769, Industrial, West Chicago, IL 60185, USA</td>
+                           <td class="py-3 align-middle">Calle 173, Industrial, apto 601</td>
                            <td class="py-3 align-middle">
                               <a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a>
                               <a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">
@@ -604,7 +530,7 @@
                            </td>
                         </tr>
                         <tr>
-                           <td class="py-3 align-middle">514 S. Magnolia St. Orlando, FL 32806, USA</td>
+                           <td class="py-3 align-middle">Carrera 21 N 29-17, Oficina 23 Piso 19</td>
                            <td class="py-3 align-middle">
                               <a class="nav-link-style mr-2" href="#" data-toggle="tooltip" title="Edit"><i class="czi-edit"></i></a>
                               <a class="nav-link-style text-danger" href="#" data-toggle="tooltip" title="Remove">

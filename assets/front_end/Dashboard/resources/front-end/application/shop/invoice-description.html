@@ -11,6 +11,10 @@
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="../../../../fontawesome-free-5.14.0-web/css/all.min.css"><!-- Purpose CSS -->
   <link rel="stylesheet" href="../../assets/css/purpose.css" id="stylesheet">
+   <!-- sheetJS -->
+   <script src="../../../../node_modules/xlsx/xlsx.mini.js"></script>
+   <!-- FileSaver -->
+   <script src="../../../../node_modules/file-saver/dist/FileSaver.min.js"></script>
 </head>
 
 <body class="application application-offset">
@@ -443,7 +447,7 @@
           <p class="text-white mb-4">
             Sistema SISRECOL creado para el SENA Colombia
           </p>
-          <a href="https://themes.getbootstrap.com/product/purpose-application-ui-kit/" class="btn btn-sm btn-block btn-white rounded-pill" target="_blank">Fase 4</a>
+          <a href="" class="btn btn-sm btn-block btn-white rounded-pill" target="_blank">Fase 4</a>
         </div>
       </div>
     </div>
@@ -811,7 +815,7 @@
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-end">
               <div class="actions actions-dark d-inline-block">
-                <a href="#" class="action-item ml-md-4">
+                <a href="#" class="action-item ml-md-4" id="button-a">
                   <i class="fas fa-file-export mr-2"></i>Exportar
                 </a>
                 <a href="#" class="action-item ml-3">
@@ -845,7 +849,7 @@
               <h5>Lista de productos</h5>
               <!-- Table -->
               <div class="table-responsive">
-                <table class="table mb-0">
+                <table class="table mb-0" id="mytable">
                   <thead>
                     <tr>
                       <th class="px-0 bg-transparent border-top-0">Descripción</th>
@@ -1003,5 +1007,25 @@
 
     gtag('config', 'UA-104437451-1');
   </script>
+  <script>
+
+    var wb = XLSX.utils.table_to_book(document.getElementById('mytable'), {sheet:"Sheet JS"});
+    var wbout = XLSX.write(wb, {booktype:'xlsx', bookSST:true, type: 'binary'});
+
+    function s2ab(s){
+       
+       var buf = new ArrayBuffer(s.length);
+       var view = new Uint8Array(buf);
+       for(var i = 0; i<s.length; i++) view[i] = s.charCodeAt(i) & 0xFF;
+       return buf;
+       
+    }
+
+    $("#button-a").click(function(){
+       saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), 'test.xlsx')
+    });
+       
+
+</script>
 </body>
 </html>
