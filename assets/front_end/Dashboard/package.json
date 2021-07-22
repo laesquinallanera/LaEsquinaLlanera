@@ -21,6 +21,6 @@
   "homepage": "https://github.com/laesquinallanera/LaEsquinaLlanera#readme",
   "dependencies": {
     "file-saver": "^2.0.2",
-    "xlsx": "^0.16.7"
+    "xlsx": "^0.17.0"
   }
 }
